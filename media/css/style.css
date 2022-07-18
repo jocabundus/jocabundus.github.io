@@ -1,22 +1,24 @@
 .img { filter: grayscale(100%); }
 
 :root {
-    --black_pixel_2x2    : url("data:image/gif;base64,R0lGODlhAgACAIABADMzMxERESH5BAEKAAEALAAAAAACAAIAAAICRF4AOw==");
-    --black_pixel_3x3    : url("data:image/gif;base64,R0lGODlhAwADAIABADMzMxERESH5BAEKAAEALAAAAAADAAMAAAIEjAMXBQA7");
-    --black_pixel_5x5    : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIFjI8GyVEAOw==");
-    --black_pixel_7x7    : url("data:image/gif;base64,R0lGODlhBwAHAIABADMzMxERESH5BAEKAAEALAAAAAAHAAcAAAIHjI+pB+tfAAA7");
-    --black_plus_5x5     : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIHjB9wwItXAAA7");
-    --black_plus_7x7     : url("data:image/gif;base64,R0lGODlhBwAHAIABADMzMxERESH5BAEKAAEALAAAAAAHAAcAAAILjI+Apgf/0gptmgIAOw==");
-    --black_stripes_thin : url("data:image/gif;base64,R0lGODlhAwADAIABADMzMxERESH5BAEKAAEALAAAAAADAAMAAAIETHAZBQA7");
-    --black_stripes_thick: url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
-    --gray_pixel_2x2     : url("data:image/gif;base64,R0lGODlhAgACAIABAH9/fxERESH5BAEKAAEALAAAAAACAAIAAAICRF4AOw==");
-    --gray_pixel_3x3     : url("data:image/gif;base64,R0lGODlhAwADAIABAH9/fxERESH5BAEKAAEALAAAAAADAAMAAAIEjAMXBQA7");
-    --gray_pixel_5x5     : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIFjI8GyVEAOw==");
-    --gray_pixel_7x7     : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAIHjI+pB+tfAAA7");
-    --gray_plus_5x5      : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIHjB9wwItXAAA7");
-    --gray_plus_7x7      : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAILjI+Apgf/0gptmgIAOw==");
-    --gray_stripes_thin  : url("data:image/gif;base64,R0lGODlhAwADAIABAH9/fxERESH5BAEKAAEALAAAAAADAAMAAAIETHAZBQA7");
-    --gray_stripes_thick : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
+    --black-pixel-2x2     : url("data:image/gif;base64,R0lGODlhAgACAIABADMzMxERESH5BAEKAAEALAAAAAACAAIAAAICRF4AOw==");
+    --black-pixel-3x3     : url("data:image/gif;base64,R0lGODlhAwADAIABADMzMxERESH5BAEKAAEALAAAAAADAAMAAAIEjAMXBQA7");
+    --black-pixel-5x5     : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIFjI8GyVEAOw==");
+    --black-pixel-7x7     : url("data:image/gif;base64,R0lGODlhBwAHAIABADMzMxERESH5BAEKAAEALAAAAAAHAAcAAAIHjI+pB+tfAAA7");
+    --black-plus-5x5      : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIHjB9wwItXAAA7");
+    --black-plus-7x7      : url("data:image/gif;base64,R0lGODlhBwAHAIABADMzMxERESH5BAEKAAEALAAAAAAHAAcAAAILjI+Apgf/0gptmgIAOw==");
+    --black-stripes-medium: url("data:image/gif;base64,R0lGODlhBAAEAIABADMzMxERESH5BAEKAAEALAAAAAAEAAQAAAIGTACXaHkFADs=");
+    --black-stripes-thin  : url("data:image/gif;base64,R0lGODlhAwADAIABADMzMxERESH5BAEKAAEALAAAAAADAAMAAAIETHAZBQA7");
+    --black-stripes-thick : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
+    --gray-pixel-2x2      : url("data:image/gif;base64,R0lGODlhAgACAIABAH9/fxERESH5BAEKAAEALAAAAAACAAIAAAICRF4AOw==");
+    --gray-pixel-3x3      : url("data:image/gif;base64,R0lGODlhAwADAIABAH9/fxERESH5BAEKAAEALAAAAAADAAMAAAIEjAMXBQA7");
+    --gray-pixel-5x5      : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIFjI8GyVEAOw==");
+    --gray-pixel-7x7      : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAIHjI+pB+tfAAA7");
+    --gray-plus-5x5       : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIHjB9wwItXAAA7");
+    --gray-plus-7x7       : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAILjI+Apgf/0gptmgIAOw==");
+    --gray-stripes-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAH9/fxERESH5BAEKAAEALAAAAAAEAAQAAAIGTACXaHkFADs=");
+    --gray-stripes-thin   : url("data:image/gif;base64,R0lGODlhAwADAIABAH9/fxERESH5BAEKAAEALAAAAAADAAMAAAIETHAZBQA7");
+    --gray-stripes-thick  : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
 }
 
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Light.ttf);           font-weight: 300; font-style: normal; }
@@ -44,31 +46,32 @@ html
 }
 body
 {
-    background: #f7f7f7;
-    height    : 100%;
-    margin    : 0 auto;
-    padding   : 0;
-    width     : 1200px;
+    background    : #f7f7f7;
+    display       : flex;
+    flex-direction: column;
+    min-height    : 100vh;
+    margin        : 0 auto;
+    padding       : 0;
+    width         : 1200px;
 }
 
-h1, h2, h3, h4, h5, h6 { text-transform:uppercase; }
-
-
-header
+#content-header
 {
-    width: 100%;
+    height        : 10em;
+    text-transform: uppercase;
+    width         : 100%;
 }
-header > .banner
+#content-header > .banner
 {
-    background-image: var(--gray_pixel_3x3);
-    border    : 1px solid #333;
-    border-top: none;
-    margin    : 0 auto;
-    padding   : 30px 30px 30px;
-    text-align: center;
-    width     : 50%;
+    background-image: var(--gray-pixel-3x3);
+    border          : 1px solid #333;
+    border-top      : none;
+    margin          : 0 auto;
+    padding         : 30px 30px 30px;
+    text-align      : center;
+    width           : 50%;
 }
-header > .banner > h1
+#content-header > .banner > h1
 {
     font-size  : 2em;
     font-weight: 800;
@@ -82,13 +85,27 @@ header > .banner > h1
     height          : 50px;
 }
 
-#response
+#content-body
 {
-    background : brown;
-    border     : 1px solid #333;
-    color      : white;
-    max-width  : calc(50%);
-    min-height : 8em;   
-    padding    : .5em;
-    width      : calc(50%);
+    border        : 1px solid #333;
+    display       : flex;
+    height        : calc(100% - 10em - 10em);
+    flex-direction: column;
+    margin        : .5em;
+    padding       : .5em 1em;
+}
+#content-body > div,
+#content-body > section
+{
+    flex-grow  : 1;
+    flex-shrink: 1;
+}
+
+#content-footer
+{
+    background-image: var(--gray-stripes-medium);
+    border          : 1px solid #333;
+    min-height      : 10em;
+    margin          : .5em;
+    padding         : .5em;
 }
