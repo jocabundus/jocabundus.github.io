@@ -16,7 +16,7 @@
     --gray-pixel-7x7      : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAIHjI+pB+tfAAA7");
     --gray-plus-5x5       : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIHjB9wwItXAAA7");
     --gray-plus-7x7       : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAILjI+Apgf/0gptmgIAOw==");
-    --gray-stripes-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAH9/fxERESH5BAEKAAEALAAAAAAEAAQAAAIGTACXaHkFADs=");
+    --gray-stripes-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAL+/vxERESH5BAEKAAEALAAAAAAEAAQAAAIGTACXaHkFADs=");
     --gray-stripes-thin   : url("data:image/gif;base64,R0lGODlhAwADAIABAH9/fxERESH5BAEKAAEALAAAAAADAAMAAAIETHAZBQA7");
     --gray-stripes-thick  : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
 }
@@ -38,8 +38,9 @@
 
 html
 {
-    background : #7f7f7f;
-    font-size  : 20px;
+    background : #5f5f5f;
+    color      : #5f5f5f;
+    font-size  : 18px;
     font-family: Montserrat;
     margin     : 0;
     padding    : 0;
@@ -53,6 +54,11 @@ body
     margin        : 0 auto;
     padding       : 0;
     width         : 1200px;
+}
+
+p
+{
+    line-height: 1.4;
 }
 
 #content-header
@@ -85,6 +91,15 @@ body
     height          : 50px;
 }
 
+#content-footer
+{
+    background-image: var(--gray-stripes-medium);
+    border          : 1px solid #333;
+    min-height      : 10em;
+    margin          : .5em;
+    padding         : .5em;
+}
+
 #content-body
 {
     border        : 1px solid #333;
@@ -99,13 +114,4 @@ body
 {
     flex-grow  : 1;
     flex-shrink: 1;
-}
-
-#content-footer
-{
-    background-image: var(--gray-stripes-medium);
-    border          : 1px solid #333;
-    min-height      : 10em;
-    margin          : .5em;
-    padding         : .5em;
 }
