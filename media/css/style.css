@@ -21,6 +21,21 @@
     --gray-stripes-thick  : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
 }
 
+:root {
+    --body-color-fg: #5f5f5f;
+    --body-color-bg: #f7f7f7;
+    --html-color-bg: #5f5f5f;
+    --html-color-fg: #5f5f5f;
+    --news-article-aside-img-border: var(--gray-pixel-7x7);
+    --page-footer-border  : 1px solid #333;
+    --page-footer-bg-image: var(--gray-stripes-medium);
+    --page-header-banner-border  : 1px solid #333;
+    --page-header-banner-bg-image: var(--gray-pixel-3x3);
+    --page-main-border: 1px solid #333;
+}
+
+.page-main { background: var(--white-shade-light); }
+
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Light.ttf);           font-weight: 300; font-style: normal; }
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-LightItalic.ttf);     font-weight: 300; font-style: italic; }
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Regular.ttf);         font-weight: 400; font-style: normal; }
@@ -36,11 +51,9 @@
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Black.ttf);           font-weight: 900; font-style: normal; }
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-BlackItalic.ttf);     font-weight: 900; font-style: italic; }
 
-figure img    { max-width: 100%;  }
-figure iframe { max-width: 100%;  }
-p             { color      : #111;
-                line-height: 1.4; }
-strong        { font-weight: 600; }
+figure img    { max-width  : 100%  }
+figure iframe { max-width  : 100%; }
+strong        { font-weight: 600;  }
 
 /* "\26e8" "\26bf" "\1f5dd" "\2618" */
 
@@ -59,17 +72,21 @@ nav.html-css-js ul { list-style-type: chess;  }
 nav.gamedev     ul { list-style-type: chess;  }
 
 
-html { background : #5f5f5f;
+html { scroll-behavior: smooth; }
+
+html { background : var(--html-color-bg);
        background-image: url(/media/images/small/gray-pixel-3x3.gif);
-       color      : #5f5f5f;
+       color      : var(--html-color-fg);
        font-size  : 18px;
        font-family: Montserrat;
        font-weight: 400;
        margin     : 0;
        padding    : 0; }
-body { background    : #f7f7f7;
+body { background    : var(--body-color-bg);
+       color         : var(--body-color-fg);
        display       : flex;
        flex-direction: column;
+       line-height   : 1.4;
        min-height    : 100vh;
        margin        : 0 auto;
        padding       : 0; }
@@ -77,14 +94,14 @@ body { background    : #f7f7f7;
 @media screen and (min-width: 768px ) { body { width: 100vw;  }  }
 @media screen and (min-width: 1024px) { body { width: 100vw;  } }
 @media screen and (min-width: 1280px) { body { width: 1240px; } }
-@media screen and (min-width: 1360px) { body { width: 100vw;  } }
+@media screen and (min-width: 1360px) { body { width: 1240px;  } }
 
 
 .page-header            { height          : 8em;
                           text-transform  : uppercase;
                           width           : 100%; }
-.page-header .banner    { background-image: var(--gray-pixel-3x3);
-                          border          : 1px solid #333;
+.page-header .banner    { background-image: var(--page-header-banner-bg-image);
+                          border          : var(--page-header-banner-border);
                           border-top      : none;
                           margin          : 0 auto;
                           padding         : 25px 30px 30px;
@@ -95,13 +112,13 @@ body { background    : #f7f7f7;
                           margin          : 0;
                           padding         : 0; }
 
-.page-footer { background-image: var(--gray-stripes-medium);
-                border          : 1px solid #333;
-                min-height      : 8em;
-                margin          : .5em;
-                padding         : .5em; }
+.page-footer { background-image: var(--page-footer-bg-image);
+               border         : var(--page-footer-border);
+               min-height     : 8em;
+               margin         : .5em;
+               padding        : .5em; }
 
-.page-main           { border       : 1px solid #333;
+.page-main           { border        : var(--page-main-border);
                        display       : flex;
                        height        : calc(100% - 10em - 10em);
                        flex-direction: column;
@@ -145,7 +162,7 @@ body { background    : #f7f7f7;
                              margin          : 0; }
 .news article p            { font-size       : .9em;   }
 .news article aside        { flex            : 46%;    }
-.news article aside img    { background-image: var(--gray-pixel-7x7);
+.news article aside img    { background-image: var(--news-article-aside-img-border);
                              height          : auto;
                              width           : 100%; }
 
