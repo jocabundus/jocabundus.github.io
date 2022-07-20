@@ -42,6 +42,22 @@ p             { color      : #111;
                 line-height: 1.4; }
 strong        { font-weight: 600; }
 
+/* "\26e8" "\26bf" "\1f5dd" "\2618" */
+
+@counter-style adventure { system: cyclic; suffix: " "; symbols: "\1f3de" "\1f3cd" "\263d" "\263c" "\26f1" "\26f4" "\2708" }
+@counter-style chess     { system: cyclic; suffix: " "; symbols: "\2654" "\2655" "\2656" "\2657" "\2658" "\2659" "\265a" "\265b" "\265c" "\265d" "\265e" "\265f" }
+@counter-style lazy      { system: cyclic; suffix: " "; symbols: "\26f5" "\1f4a4" "\1f60e" "\1f378" "\1f334""\1f34d" "\1f965"  "\1f31e"  }
+@counter-style lucky     { system: cyclic; suffix: " "; symbols: "\1f308" "\1f340" "\1f984" "\2728" "\1f40b" "\1f4ab" "\1f42c" "\1f31e" "\1f344" "\1f432" }
+@counter-style sugar     { system: cyclic; suffix: " "; symbols: "\1f369" "\1f36a" "\1f36b" "\1f375" "\2615" "\1f95e" "\1f96a" "\1f95b" "\1f9c0" "\1f950" "\1f953" "\1f995" "\1f996" "\1f366"}
+
+/* add card decks to chess */
+
+nav ul             { font-size      : 16px;   }
+nav.magento     ul { list-style-type: chess;  }
+nav.wordpress   ul { list-style-type: chess;  }
+nav.html-css-js ul { list-style-type: chess;  }
+nav.gamedev     ul { list-style-type: chess;  }
+
 
 html { background : #5f5f5f;
        background-image: url(/media/images/small/gray-pixel-3x3.gif);
@@ -92,6 +108,27 @@ body { background    : #f7f7f7;
                        margin        : .5em;
                        padding       : .5em 1em; }
 
+
+/*
+ * 
+ * Index Page
+ * 
+ */
+.articles     { display        : flex;
+                flex-flow      : row wrap;
+                justify-content: space-around; }
+.articles nav { flex           : 1;
+                padding        : 0 1em; }
+
+.articles nav li small         { font-weight: bold; }
+.articles nav li small::before { content    : "("; }
+.articles nav li small::after  { content    : ")"; }
+
+/*
+ * 
+ * Games Page
+ * 
+ */
 .news        { margin        : 0 0 1em;  }
 .news header { border-bottom : 1px solid #bfbfbf; }
 
