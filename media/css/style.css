@@ -22,6 +22,29 @@
 }
 
 :root {
+    --white-shade-faint  : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --white-shade-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --white-shade-strong : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --white-shade-ultra  : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --silver-shade-faint : url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --silver-shade-medium: url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --silver-shade-strong: url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --silver-shade-ultra : url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --gray-shade-faint   : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --gray-shade-medium  : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --gray-shade-strong  : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --gray-shade-ultra   : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --dark-shade-faint   : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --dark-shade-medium  : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --dark-shade-strong  : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --dark-shade-ultra   : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --black-shade-faint  : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --black-shade-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --black-shade-strong : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --black-shade-ultra  : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+}
+
+:root {
     --body-color-fg: #5f5f5f;
     --body-color-bg: #f7f7f7;
     --html-color-bg: #5f5f5f;

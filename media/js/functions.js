@@ -2,7 +2,6 @@ window.addEventListener("DOMContentLoaded", function(){
 });
 
 window.addEventListener("load", function() {
-    
 });
 
 function imageToBase64(url) {
