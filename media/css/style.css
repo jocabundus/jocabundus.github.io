@@ -1,27 +1,6 @@
 .img { filter: grayscale(100%); }
 
 :root {
-    --black-pixel-2x2     : url("data:image/gif;base64,R0lGODlhAgACAIABADMzMxERESH5BAEKAAEALAAAAAACAAIAAAICRF4AOw==");
-    --black-pixel-3x3     : url("data:image/gif;base64,R0lGODlhAwADAIABADMzMxERESH5BAEKAAEALAAAAAADAAMAAAIEjAMXBQA7");
-    --black-pixel-5x5     : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIFjI8GyVEAOw==");
-    --black-pixel-7x7     : url("data:image/gif;base64,R0lGODlhBwAHAIABADMzMxERESH5BAEKAAEALAAAAAAHAAcAAAIHjI+pB+tfAAA7");
-    --black-plus-5x5      : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIHjB9wwItXAAA7");
-    --black-plus-7x7      : url("data:image/gif;base64,R0lGODlhBwAHAIABADMzMxERESH5BAEKAAEALAAAAAAHAAcAAAILjI+Apgf/0gptmgIAOw==");
-    --black-stripes-medium: url("data:image/gif;base64,R0lGODlhBAAEAIABADMzMxERESH5BAEKAAEALAAAAAAEAAQAAAIGTACXaHkFADs=");
-    --black-stripes-thin  : url("data:image/gif;base64,R0lGODlhAwADAIABADMzMxERESH5BAEKAAEALAAAAAADAAMAAAIETHAZBQA7");
-    --black-stripes-thick : url("data:image/gif;base64,R0lGODlhBQAFAIABADMzMxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
-    --gray-pixel-2x2      : url("data:image/gif;base64,R0lGODlhAgACAIABAH9/fxERESH5BAEKAAEALAAAAAACAAIAAAICRF4AOw==");
-    --gray-pixel-3x3      : url("data:image/gif;base64,R0lGODlhAwADAIABAH9/fxERESH5BAEKAAEALAAAAAADAAMAAAIEjAMXBQA7");
-    --gray-pixel-5x5      : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIFjI8GyVEAOw==");
-    --gray-pixel-7x7      : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAIHjI+pB+tfAAA7");
-    --gray-plus-5x5       : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIHjB9wwItXAAA7");
-    --gray-plus-7x7       : url("data:image/gif;base64,R0lGODlhBwAHAIABAH9/fxERESH5BAEKAAEALAAAAAAHAAcAAAILjI+Apgf/0gptmgIAOw==");
-    --gray-stripes-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAL+/vxERESH5BAEKAAEALAAAAAAEAAQAAAIGTACXaHkFADs=");
-    --gray-stripes-thin   : url("data:image/gif;base64,R0lGODlhAwADAIABAH9/fxERESH5BAEKAAEALAAAAAADAAMAAAIETHAZBQA7");
-    --gray-stripes-thick  : url("data:image/gif;base64,R0lGODlhBQAFAIABAH9/fxERESH5BAEKAAEALAAAAAAFAAUAAAIIRAKGuZbKUAEAOw==");
-}
-
-:root {
     --white-shade-faint  : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
     --white-shade-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
     --white-shade-strong : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
@@ -45,19 +24,18 @@
 }
 
 :root {
-    --body-color-fg: #5f5f5f;
-    --body-color-bg: #f7f7f7;
-    --html-color-bg: #5f5f5f;
-    --html-color-fg: #5f5f5f;
-    --news-article-aside-img-border: var(--gray-pixel-7x7);
-    --page-footer-border  : 1px solid #333;
-    --page-footer-bg-image: var(--gray-stripes-medium);
-    --page-header-banner-border  : 1px solid #333;
-    --page-header-banner-bg-image: var(--gray-pixel-3x3);
-    --page-main-border: 1px solid #333;
+    --body-fg: #5f5f5f;
+    --body-bg: #f7f7f7;
+    --html-bg: var(--dark-shade-faint) #bbbbbb;
+    --html-fg: #5f5f5f;
+    --page-footer-border       : 1px solid #333;
+    --page-footer-bg           : var(--silver-shade-medium);
+    --page-footer-fg           : #7f7f7f;
+    --page-header-banner-border: 1px solid #333;
+    --page-header-banner-bg    : var(--silver-shade-faint);
+    --page-main-border         : 1px solid #333;
+    --page-main-fg             : #888;
 }
-
-.page-main { background: var(--white-shade-light); }
 
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Light.ttf);           font-weight: 300; font-style: normal; }
 @font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-LightItalic.ttf);     font-weight: 300; font-style: italic; }
@@ -94,19 +72,15 @@ nav.wordpress   ul { list-style-type: chess;  }
 nav.html-css-js ul { list-style-type: chess;  }
 nav.gamedev     ul { list-style-type: chess;  }
 
-
-html { scroll-behavior: smooth; }
-
-html { background : var(--html-color-bg);
-       background-image: url(/media/images/small/gray-pixel-3x3.gif);
-       color      : var(--html-color-fg);
+html { background : var(--html-bg);
+       color      : var(--html-fg);
        font-size  : 18px;
        font-family: Montserrat;
        font-weight: 400;
        margin     : 0;
        padding    : 0; }
-body { background    : var(--body-color-bg);
-       color         : var(--body-color-fg);
+body { background    : var(--body-bg);
+       color         : var(--body-fg);
        display       : flex;
        flex-direction: column;
        line-height   : 1.4;
@@ -135,18 +109,20 @@ body { background    : var(--body-color-bg);
                           margin          : 0;
                           padding         : 0; }
 
-.page-footer { background-image: var(--page-footer-bg-image);
-               border         : var(--page-footer-border);
-               min-height     : 8em;
-               margin         : .5em;
-               padding        : .5em; }
+.page-footer   { background: var(--page-footer-bg);
+                 color     : var(--page-footer-fg);
+                 border    : var(--page-footer-border);
+                 min-height: 8em;
+                 margin    : .5em;
+                 padding   : .5em; }
 
-.page-main           { border        : var(--page-main-border);
-                       display       : flex;
-                       height        : calc(100% - 10em - 10em);
-                       flex-direction: column;
-                       margin        : .5em;
-                       padding       : .5em 1em; }
+.page-main { border        : var(--page-main-border);
+             color         : var(--page-main-fg);
+             display       : flex;
+             height        : calc(100% - 10em - 10em);
+             flex-direction: column;
+             margin        : .5em;
+             padding       : .5em 1em; }
 
 
 /*
