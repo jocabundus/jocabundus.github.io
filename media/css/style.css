@@ -83,13 +83,14 @@ body { background    : var(--body-bg);
        color         : var(--body-fg);
        display       : flex;
        flex-direction: column;
-       line-height   : 1.44;
+       line-height   : 1.4;
        min-height    : 100vh;
        margin        : 0 auto;
        padding       : 0; }
 
-body a { color: #6f6f6f; }
+body a { color: #6f6f6f; text-decoration-color: #b7b7b7; }
 body a:visited { color: #bbb; }
+body a:hover   { color: #000; }
 
 @media screen and (min-width: 768px ) { body { width: 100vw;  }  }
 @media screen and (min-width: 1024px) { body { width: 100vw;  } }
