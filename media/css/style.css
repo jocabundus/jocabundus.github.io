@@ -39,6 +39,8 @@
     --dark-shade-medium  : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
     --dark-shade-strong  : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
     --dark-shade-ultra   : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --checkered-lighter  : url("data:image/gif;base64,R0lGODlhBgAGAKECAN3d3evr6xERERERESH5BAEKAAIALAAAAAAGAAYAAAIKhIMGGMrs0pGgAAA7");
+    --checkered-darker   : url("data:image/gif;base64,R0lGODlhBgAGAKECANTU1OTk5BERERERESH5BAEKAAIALAAAAAAGAAYAAAIKhIMGGMrs0pGgAAA7");
     --black-shade-faint  : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
     --black-shade-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
     --black-shade-strong : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
@@ -72,7 +74,7 @@
 :root {
     --body-fg                  : var(--fg-dark);
     --body-bg                  : var(--bg-light);
-    --html-bg                  : var(--black-shade-strong);
+    --html-bg                  : var(--checkered-lighter) #e4e4e4;
     --html-fg                  : var(--fg-medium);
     --page-footer-bg           : var(--bg-dark);
     --page-footer-fg           : var(--fg-light);
@@ -118,6 +120,7 @@ html { background : var(--html-bg);
        margin     : 0;
        padding    : 0; }
 body { background    : var(--body-bg);
+       border        : var(--border-default);
        color         : var(--body-fg);
        display       : flex;
        flex-direction: column;
