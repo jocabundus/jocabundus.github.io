@@ -1,5 +1,27 @@
 .img { filter: grayscale(100%); }
 
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Light.ttf);           font-weight: 300; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-LightItalic.ttf);     font-weight: 300; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Regular.ttf);         font-weight: 400; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Italic.ttf);          font-weight: 400; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Medium.ttf);          font-weight: 500; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-MediumItalic.ttf);    font-weight: 500; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-SemiBold.ttf);        font-weight: 600; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf);  font-weight: 600; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Bold.ttf);            font-weight: 700; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-BoldItalic.ttf);      font-weight: 700; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-ExtraBold.ttf);       font-weight: 800; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf); font-weight: 800; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Black.ttf);           font-weight: 900; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-BlackItalic.ttf);     font-weight: 900; font-style: italic; }
+
+/* "\26e8" "\26bf" "\1f5dd" "\2618" */
+@counter-style adventure { system: cyclic; suffix: " "; symbols: "\1f3de" "\1f3cd" "\263d" "\263c" "\26f1" "\26f4" "\2708" }
+@counter-style chess     { system: cyclic; suffix: " "; symbols: "\2654" "\2655" "\2656" "\2657" "\2658" "\2659" "\265a" "\265b" "\265c" "\265d" "\265e" "\265f" }
+@counter-style lazy      { system: cyclic; suffix: " "; symbols: "\26f5" "\1f4a4" "\1f60e" "\1f378" "\1f334""\1f34d" "\1f965"  "\1f31e"  }
+@counter-style lucky     { system: cyclic; suffix: " "; symbols: "\1f308" "\1f340" "\1f984" "\2728" "\1f40b" "\1f4ab" "\1f42c" "\1f31e" "\1f344" "\1f432" }
+@counter-style sugar     { system: cyclic; suffix: " "; symbols: "\1f369" "\1f36a" "\1f36b" "\1f375" "\2615" "\1f95e" "\1f96a" "\1f95b" "\1f9c0" "\1f950" "\1f953" "\1f995" "\1f996" "\1f366"}
+
 :root {
     --white-shade-faint  : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
     --white-shade-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
@@ -24,47 +46,61 @@
 }
 
 :root {
-    --body-fg: #5f5f5f;
-    --body-bg: #f7f7f7;
-    --html-bg: var(--dark-shade-faint) #bbbbbb;
-    --html-fg: #5f5f5f;
-    --page-footer-border       : 1px solid #333;
-    --page-footer-bg           : #ddd;
-    --page-footer-fg           : #777;
-    --page-header-banner-border: 1px solid #333;
-    --page-header-banner-bg    : var(--silver-shade-faint);
-    --page-main-border         : 1px solid #333;
-    --page-main-fg             : #777;
+    --bd-medium          : #5f5f5f;
+    --bd-light           : #bfbfbf;
+    --bg-dark            : #333333;
+    --bg-medium          : #bbbbbb;
+    --bg-light           : #f7f7f7;
+    --black              : #050505;
+    --fg-dark            : #454545;
+    --fg-medium          : #5f5f5f; 
+    --fg-light           : #c1c1c1;
 }
 
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Light.ttf);           font-weight: 300; font-style: normal; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-LightItalic.ttf);     font-weight: 300; font-style: italic; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Regular.ttf);         font-weight: 400; font-style: normal; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Italic.ttf);          font-weight: 400; font-style: italic; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Medium.ttf);          font-weight: 500; font-style: normal; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-MediumItalic.ttf);    font-weight: 500; font-style: italic; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-SemiBold.ttf);        font-weight: 600; font-style: normal; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf);  font-weight: 600; font-style: italic; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Bold.ttf);            font-weight: 700; font-style: normal; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-BoldItalic.ttf);      font-weight: 700; font-style: italic; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-ExtraBold.ttf);       font-weight: 800; font-style: normal; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf); font-weight: 800; font-style: italic; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Black.ttf);           font-weight: 900; font-style: normal; }
-@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-BlackItalic.ttf);     font-weight: 900; font-style: italic; }
+:root {
+    --article-header-bg  : #e4e4e4;
+    --article-header-fg  : #5f5f5f;
+    --article-heading-fg : #555555;
+}
+
+:root {
+    --border-default     : 1px solid var(--bd-light);
+    --border-medium      : 1px solid var(--bd-medium);
+    --hover-bg           : var(--bg-dark);
+    --hover-fg           : var(--bg-light);
+    --link-fg            : #717171;
+    --link-ul            : #8d8d8d;
+    --visited-fg         : #a1a1a1;
+    --visited-ul         : #c1c1c1;
+}
+
+:root {
+    --body-fg                  : var(--fg-dark);
+    --body-bg                  : var(--bg-light);
+    --html-bg                  : var(--dark-shade-faint) var(--bg-medium);
+    --html-fg                  : var(--fg-medium);
+    --page-footer-bg           : var(--bg-dark);
+    --page-footer-fg           : var(--fg-light);
+    --page-header-banner-border: var(--border-default);
+    --page-header-banner-bg    : var(--silver-shade-faint);
+    --page-main-border         : var(--border-medium);
+    --page-main-fg             : var(--fg-dark);
+}
+
+/*
+ * 
+ * Catch-all
+ * 
+ */
+
+a:link    { color: var(--link-fg)   ; font-weight: 500;}
+a:visited { color: var(--visited-fg); font-weight: 500; text-decoration-color: var(--visited-ul); }
+a:hover   { color: var(--black)     ; font-weight: 500; }
+a:active  { background-color: var(--bg-dark); color: var(--bg-light); }
 
 figure img    { max-width  : 100%  }
 figure iframe { max-width  : 100%; }
 strong        { font-weight: 600;  }
-
-/* "\26e8" "\26bf" "\1f5dd" "\2618" */
-
-@counter-style adventure { system: cyclic; suffix: " "; symbols: "\1f3de" "\1f3cd" "\263d" "\263c" "\26f1" "\26f4" "\2708" }
-@counter-style chess     { system: cyclic; suffix: " "; symbols: "\2654" "\2655" "\2656" "\2657" "\2658" "\2659" "\265a" "\265b" "\265c" "\265d" "\265e" "\265f" }
-@counter-style lazy      { system: cyclic; suffix: " "; symbols: "\26f5" "\1f4a4" "\1f60e" "\1f378" "\1f334""\1f34d" "\1f965"  "\1f31e"  }
-@counter-style lucky     { system: cyclic; suffix: " "; symbols: "\1f308" "\1f340" "\1f984" "\2728" "\1f40b" "\1f4ab" "\1f42c" "\1f31e" "\1f344" "\1f432" }
-@counter-style sugar     { system: cyclic; suffix: " "; symbols: "\1f369" "\1f36a" "\1f36b" "\1f375" "\2615" "\1f95e" "\1f96a" "\1f95b" "\1f9c0" "\1f950" "\1f953" "\1f995" "\1f996" "\1f366"}
-
-/* add card decks to chess */
 
 nav ul             { font-size      : 16px;   }
 nav.magento     ul { list-style-type: chess;  }
@@ -88,10 +124,6 @@ body { background    : var(--body-bg);
        margin        : 0 auto;
        padding       : 0; }
 
-body a { color: #6f6f6f; text-decoration-color: #b7b7b7; }
-body a:visited { color: #bbb; }
-body a:hover   { color: #000; }
-
 @media screen and (min-width: 768px ) { body { width: 100vw;  }  }
 @media screen and (min-width: 1024px) { body { width: 100vw;  } }
 @media screen and (min-width: 1280px) { body { width: 1240px; } }
@@ -102,7 +134,7 @@ body a:hover   { color: #000; }
                           text-transform  : uppercase;
                           width           : 100%; }
 .page-header .banner    { background-image: var(--page-header-banner-bg);
-                          border          : var(--page-header-banner-border);
+                          border          : var(--border-default);
                           border-top      : none;
                           margin          : 0 auto;
                           padding         : 25px 30px 30px;
@@ -115,7 +147,6 @@ body a:hover   { color: #000; }
 
 .page-footer   { background: var(--page-footer-bg);
                  color     : var(--page-footer-fg);
-                 border    : var(--page-footer-border);
                  font-size : .925em;
                  min-height: 8em;
                  margin    : .5em;
@@ -130,10 +161,19 @@ body a:hover   { color: #000; }
              margin        : .5em;
              padding       : .5em 1em; }
 
-
 /*
  * 
  * Index Page
+ * 
+ */
+.hero-banner { border : var(--border-default);
+               padding: 1em;
+               height : 20%;
+               width  : 100%; }
+
+/*
+ * 
+ * Articles Page
  * 
  */
 .articles     { display        : flex;
@@ -143,43 +183,47 @@ body a:hover   { color: #000; }
                 padding        : 0 1em; }
 
 .articles nav li small         { font-weight: bold; }
-.articles nav li small::before { content    : "("; }
-.articles nav li small::after  { content    : ")"; }
+.articles nav li small::before { content    :  "("; }
+.articles nav li small::after  { content    :  ")"; }
 
 /*
  * 
  * Games Page
  * 
  */
-.news        { margin        : 0 0 1em;  }
-.news header { border-bottom : 1px solid #bfbfbf; }
+.news          { margin        : 0 0 1em;  }
+.news > header { border-bottom : var(--border-default);
+                 margin-bottom : 1em; }
 
-.news article                { display         : flex;
-                               flex-direction  : row;
-                               flex-wrap       : wrap;   }
-.news article > div          { flex            : 51%;
-                               padding-right   : 3%;     }
-.news article header         { border-bottom   : 1px solid #bfbfbf;
-                               flex            : 100%;
-                               height          : 4.5em;
-                               margin          : 1em 0;  }
-.news article h1             { color           : #333;
-                               font-size       : 1.33em;
-                               margin          : 0;      }
-.news article h3:first-child { margin-top      : 0;      }
-.news article p              { font-size       : .9em;   }
-.news article aside          { flex            : 46%;    }
-.news article aside img      { background-image: var(--news-article-aside-img-border);
-                               height          : auto;
-                               width           : 100%;   }
+article                { display         : flex;
+                         flex-direction  : row;
+                         flex-wrap       : wrap;   }
+article > div          { flex            : 51%;
+                         padding-right   : 3%;     }
+article header         { background      : var(--article-header-bg);
+                         border          : 0;
+                         color           : var(--article-header-fg);
+                         flex            : 100%;
+                         height          : 4.5em;
+                         margin          : 0 0 1em -1em;
+                         padding         : 1em 1em 0; }
+article h1             { font-size       : 1.33em;
+                         margin          : 0; }
+article h3             { color           : var(--article-heading-fg); }
+article h3:first-child { margin-top      : 0;      }
+article p              { font-size       : .9em;   }
+article aside          { flex            : 46%;    }
+article aside img      { background-image: var(--bg-medium);
+                         height          : auto;
+                         width           : 100%;   }
 
-.news article aside div          { height          : auto;
+article aside div                { height          : auto;
                                    margin          : 0 0 .25em 0;
                                    position        : relative;
                                    width           : 100%; }
-.news article aside div > img    { height          : auto;
+article aside div > .placeholder { height          : auto;
                                    width           : 100%; }
-.news article aside div > iframe { height          : 100%;
+article aside div > .placeover   { height          : 100%;
                                    left            : 0;
                                    margin          : 0; 
                                    position        : absolute;
