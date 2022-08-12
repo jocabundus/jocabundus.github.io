@@ -1,0 +1,236 @@
+.img { filter: grayscale(100%); }
+
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Light.ttf);           font-weight: 300; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-LightItalic.ttf);     font-weight: 300; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Regular.ttf);         font-weight: 400; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Italic.ttf);          font-weight: 400; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Medium.ttf);          font-weight: 500; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-MediumItalic.ttf);    font-weight: 500; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-SemiBold.ttf);        font-weight: 600; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf);  font-weight: 600; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Bold.ttf);            font-weight: 700; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-BoldItalic.ttf);      font-weight: 700; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-ExtraBold.ttf);       font-weight: 800; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf); font-weight: 800; font-style: italic; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-Black.ttf);           font-weight: 900; font-style: normal; }
+@font-face { font-family: Montserrat; src: url(/media/fonts/Montserrat/static/Montserrat-BlackItalic.ttf);     font-weight: 900; font-style: italic; }
+
+/* "\26e8" "\26bf" "\1f5dd" "\2618" */
+@counter-style adventure { system: cyclic; suffix: " "; symbols: "\1f3de" "\1f3cd" "\263d" "\263c" "\26f1" "\26f4" "\2708" }
+@counter-style chess     { system: cyclic; suffix: " "; symbols: "\2654" "\2655" "\2656" "\2657" "\2658" "\2659" "\265a" "\265b" "\265c" "\265d" "\265e" "\265f" }
+@counter-style lazy      { system: cyclic; suffix: " "; symbols: "\26f5" "\1f4a4" "\1f60e" "\1f378" "\1f334""\1f34d" "\1f965"  "\1f31e"  }
+@counter-style lucky     { system: cyclic; suffix: " "; symbols: "\1f308" "\1f340" "\1f984" "\2728" "\1f40b" "\1f4ab" "\1f42c" "\1f31e" "\1f344" "\1f432" }
+@counter-style sugar     { system: cyclic; suffix: " "; symbols: "\1f369" "\1f36a" "\1f36b" "\1f375" "\2615" "\1f95e" "\1f96a" "\1f95b" "\1f9c0" "\1f950" "\1f953" "\1f995" "\1f996" "\1f366"}
+
+:root {
+    --white-shade-faint  : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --white-shade-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --white-shade-strong : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --white-shade-ultra  : url("data:image/gif;base64,R0lGODlhBAAEAIABAO7u7hERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --silver-shade-faint : url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --silver-shade-medium: url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --silver-shade-strong: url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --silver-shade-ultra : url("data:image/gif;base64,R0lGODlhBAAEAIABALu7uxERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --gray-shade-faint   : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --gray-shade-medium  : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --gray-shade-strong  : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --gray-shade-ultra   : url("data:image/gif;base64,R0lGODlhBAAEAIABAIiIiBERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --dark-shade-faint   : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --dark-shade-medium  : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --dark-shade-strong  : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --dark-shade-ultra   : url("data:image/gif;base64,R0lGODlhBAAEAIABAFVVVRERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+    --checkered-lighter  : url("data:image/gif;base64,R0lGODlhBgAGAKECAN3d3evr6xERERERESH5BAEKAAIALAAAAAAGAAYAAAIKhIMGGMrs0pGgAAA7");
+    --checkered-darker   : url("data:image/gif;base64,R0lGODlhBgAGAKECANTU1OTk5BERERERESH5BAEKAAIALAAAAAAGAAYAAAIKhIMGGMrs0pGgAAA7");
+    --black-shade-faint  : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIERI5oWQA7");
+    --black-shade-medium : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFRByZhlkAOw==");
+    --black-shade-strong : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFRHxnuAUAOw==");
+    --black-shade-ultra  : url("data:image/gif;base64,R0lGODlhBAAEAIABACIiIhERESH5BAEKAAEALAAAAAAEAAQAAAIFDAyZhlkAOw==");
+}
+
+:root {
+    --bg-light           : #f7f7f7;
+    --bg-silver          : #e4e4e4;
+    --bg-medium          : #bbbbbb;
+    --bg-dark            : #333333;
+    --fg-light           : #c1c1c1;
+    --fg-neutral         : #666666;
+    --fg-medium          : #5f5f5f;
+    --fg-dark            : #454545;
+    --black              : #050505;
+}
+
+
+:root {
+    --border-default     : 1px solid var(--fg-light);
+    --border-medium      : 1px solid var(--fg-medium);
+    --hover-bg           : var(--bg-dark);
+    --hover-fg           : var(--bg-light);
+    --link-fg            : var(--fg-medium);
+    --link-ul            : var(--fg-neutral);
+    --visited-fg         : var(--bg-medium);
+    --visited-ul         : var(--fg-light);
+}
+
+:root {
+    --body-fg                  : var(--fg-dark);
+    --body-bg                  : var(--bg-light);
+    --html-bg                  : var(--checkered-lighter) var(--bg-silver);
+    --html-fg                  : var(--fg-medium);
+    --page-footer-bg           : var(--bg-dark);
+    --page-footer-fg           : var(--fg-light);
+    --page-header-banner-border: var(--border-default);
+    --page-header-banner-bg    : var(--silver-shade-faint);
+    --page-header-banner-fg    : var(--fg-medium);
+    --page-main-border         : var(--border-medium);
+    --page-main-fg             : var(--fg-dark);
+    --placeholder-bg           : var(--bg-medium);
+}
+
+:root {
+    --article-header-bg  : var(--bg-silver);
+    --article-header-fg  : var(--fg-neutral);
+}
+
+/*
+ * 
+ * Catch-all
+ * 
+ */
+
+a:link    { color: var(--link-fg)   ; text-decoration-color: var(--link-ul); }
+a:visited { color: var(--visited-fg); text-decoration-color: var(--visited-ul); }
+a:hover   { color: var(--black)     ; }
+a:active  { background-color: var(--bg-dark); color: var(--bg-light); }
+
+figure img    { max-width  : 100%  }
+figure iframe { max-width  : 100%; }
+strong        { font-weight: 600;  }
+
+nav ul             { font-size      : 16px;   }
+nav.magento     ul { list-style-type: chess;  }
+nav.wordpress   ul { list-style-type: chess;  }
+nav.html-css-js ul { list-style-type: chess;  }
+nav.gamedev     ul { list-style-type: chess;  }
+
+html { background : var(--html-bg);
+       color      : var(--html-fg);
+       font-size  : 18px;
+       font-family: Montserrat;
+       font-weight: 400;
+       margin     : 0;
+       padding    : 0; }
+body { background    : var(--body-bg);
+       border        : var(--border-default);
+       color         : var(--body-fg);
+       display       : flex;
+       flex-direction: column;
+       line-height   : 1.4;
+       min-height    : 100vh;
+       margin        : 0 auto;
+       padding       : 0; }
+
+@media screen and (min-width: 768px ) { body { width: 100vw;  }  }
+@media screen and (min-width: 1024px) { body { width: 100vw;  } }
+@media screen and (min-width: 1280px) { body { width: 1240px; } }
+@media screen and (min-width: 1360px) { body { width: 1240px;  } }
+
+
+.page-header            { height          : 8em;
+                          text-transform  : uppercase;
+                          width           : 100%; }
+.page-header .banner    { background      : var(--page-header-banner-bg);
+                          border          : var(--border-default);
+                          border-top      : none;
+                          margin          : 0 auto;
+                          padding         : 25px 30px 30px;
+                          text-align      : center;
+                          width           : 50%; }
+.page-header .banner h1 { color           : var(--page-header-banner-fg);
+                          font-size       : 2em;
+                          font-weight     : 800;
+                          margin          : 0;
+                          padding         : 0; }
+
+.page-footer   { background: var(--page-footer-bg);
+                 color     : var(--page-footer-fg);
+                 font-size : .925em;
+                 min-height: 8em;
+                 margin    : .5em;
+                 padding   : .5em 1em;
+                 text-align: right; }
+
+.page-main { border        : var(--page-main-border);
+             color         : var(--page-main-fg);
+             display       : flex;
+             height        : calc(100% - 10em - 10em);
+             flex-direction: column;
+             margin        : .5em;
+             padding       : .5em 1em; }
+
+/*
+ * 
+ * Index Page
+ * 
+ */
+.hero-banner { border : var(--border-default);
+               padding: 1em;
+               height : 20%;
+               width  : 100%; }
+
+/*
+ * 
+ * Articles Page
+ * 
+ */
+.articles     { display        : flex;
+                flex-flow      : row wrap;
+                justify-content: space-around; }
+.articles nav { flex           : 1;
+                padding        : 0 1em; }
+
+.articles nav li small         { font-weight: bold; }
+.articles nav li small::before { content    :  "("; }
+.articles nav li small::after  { content    :  ")"; }
+
+/*
+ * 
+ * Games Page
+ * 
+ */
+.news          { margin        : 0 0 1em;  }
+.news > header { border-bottom : var(--border-default);
+                 margin-bottom : 1em; }
+
+article                { display       : flex;
+                         flex-direction: row;
+                         flex-wrap     : wrap;   }
+article > div          { flex          : 51%;
+                         padding-right : 3%;     }
+article header         { background    : var(--article-header-bg);
+                         border        : 0;
+                         flex          : 100%;
+                         height        : 4.5em;
+                         margin        : 0 0 1em -1em;
+                         padding       : 1em 1em 0; }
+article h1             { color         : var(--article-header-fg);
+                         font-size     : 1.33em;
+                         margin        : 0; }
+article h3:first-child { margin-top    : 0;      }
+article p              { font-size     : .9em;   }
+article aside          { flex          : 46%;    }
+article aside img      { background    : var(--placeholder-bg);
+                         height        : auto;
+                         width         : 100%;   }
+
+article aside div                { height          : auto;
+                                   margin          : 0 0 .25em 0;
+                                   position        : relative;
+                                   width           : 100%; }
+article aside div > .placeholder { height          : auto;
+                                   width           : 100%; }
+article aside div > .placeover   { height          : 100%;
+                                   left            : 0;
+                                   margin          : 0; 
+                                   position        : absolute;
+                                   top             : 0;
+                                   width           : 100%; }
