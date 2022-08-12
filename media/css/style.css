@@ -74,7 +74,7 @@
 :root {
     --body-fg                  : var(--fg-dark);
     --body-bg                  : var(--bg-light);
-    --html-bg                  : var(--checkered-lighter) #e4e4e4;
+    --html-bg                  : var(--checkered-lighter) var(--bg-silver);
     --html-fg                  : var(--fg-medium);
     --page-footer-bg           : var(--bg-dark);
     --page-footer-fg           : var(--fg-light);
