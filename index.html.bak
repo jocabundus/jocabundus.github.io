@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delta Code - Video Game Development</title>
+        <link rel="stylesheet" href="/media/css/style.css" />
+        <script type="text/javascript" src="/media/js/functions.js"></script>
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="banner"><h1>Delta Code</h1></div>
+        </header>
+        <main class="page-main">
+            <section class="hero-banner">
+                
+            </section>
+            <p>Welcome, stranger!</p>
+        </main>
+        <footer class="page-footer">
+            <p>
+                Delta Code is a registered DBA of Joe King LLC, a Utah Limited Liability Company.
+            </p>
+        </footer>
+    </body>
+</html>
