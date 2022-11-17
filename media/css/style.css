@@ -59,22 +59,6 @@
     --black              : #050505;
 }
 
-:root {
-
-    --color-major        : #516D8C;
-    --color-accent2        : #BFCBD9;
-    --color-accent       : #344559;
-    --color-minor     : #7EA8D9;
-    --color-minor2      : #8C959F;
-
-/*
-    --color-major        : #516D8C;
-    --color-minor        : #403218;
-    --color-minor2       : #8C7751;
-    --color-accent       : #1F2E40;
-    --color-accent2      : #93B4D9;
-*/
-}
 
 :root {
     --border-default     : 1px solid var(--fg-light);
@@ -89,23 +73,22 @@
 
 :root {
     --body-fg                  : var(--fg-dark);
-    --body-bg                  : var(--color-accent); /*#fff; /*var(--color-major); /*var(--bg-light);*/
+    --body-bg                  : var(--bg-light);
     --html-bg                  : var(--checkered-lighter) var(--bg-silver);
     --html-fg                  : var(--fg-medium);
-    --page-footer-bg           : var(--color-accent) var(--silver-shade-medium); /*var(--bg-dark);*/
-    --page-footer-fg           : #fff; /*var(--fg-light);*/
+    --page-footer-bg           : var(--bg-dark);
+    --page-footer-fg           : var(--fg-light);
     --page-header-banner-border: var(--border-default);
-    --page-header-banner-bg    : var(--color-accent) var(--silver-shade-medium); /*var(--silver-shade-medium);*/
-    --page-header-banner-fg    : #eee; /*var(--color-minor2); /*var(--fg-medium);*/
+    --page-header-banner-bg    : var(--silver-shade-faint);
+    --page-header-banner-fg    : var(--fg-medium);
     --page-main-border         : var(--border-medium);
-    --page-main-bg             : var(--color-major); /*#fff;*/
-    --page-main-fg             : #fff; /*var(-color-major); /*var(--fg-dark);*/
+    --page-main-fg             : var(--fg-dark);
     --placeholder-bg           : var(--bg-medium);
 }
 
 :root {
-    --article-header-bg  : var(--color-accent2); /*var(--bg-silver);*/
-    --article-header-fg  : var(--color-major); /*var(--fg-neutral);*/
+    --article-header-bg  : var(--bg-silver);
+    --article-header-fg  : var(--fg-neutral);
 }
 
 /*
@@ -175,8 +158,7 @@ body { background    : var(--body-bg);
                  padding   : .5em 1em;
                  text-align: right; }
 
-.page-main { background    : var(--page-main-bg);
-             border        : var(--page-main-border);
+.page-main { border        : var(--page-main-border);
              color         : var(--page-main-fg);
              display       : flex;
              height        : calc(100% - 10em - 10em);
